@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>OAuth Tutorials</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        nav {
+            background-color: rgb(182, 179, 179);
+            padding: 20px 0;
+            text-align: center; /* Centering the nav items */
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: inline-block; /* Center the list horizontally */
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        nav a {
+            color: #3d3a3a;
+            font-size: 18px;
+            font-weight: 600;
+            background-color: rgb(255, 255, 255);
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #e0e0e0;
+        }
+
+        main, header {
+            max-width: 960px;
+            margin: 30px auto;
+            padding: 0 10px;
+            color: #333;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        main p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <% if (user) { %>
+                <li><a href="/auth/logout">Log out</a></li>
+                <% } else { %>
+                <li><a href="/auth/login">Login</a></li>
+                <% } %>
+                <li><a href="/">Homepage</a></li>
+                <li><a href="/profile">Profile</a></li>
+
+        </ul>
+    </nav>
+<header>
+    <h1>OAuth Authentication with Google</h1>
+    <h2>Seamless Login Experience</h2>
+</header>
+<main>
+    <p>Learn how to integrate Google OAuth for easy and secure login in your apps. This tutorial will guide you through the process of setting up OAuth 2.0 authentication for a seamless user experience.</p>
+</main>
+
+
+</body>
+</html>
